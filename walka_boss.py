@@ -53,7 +53,7 @@ def main():
     with sync_playwright() as pw:
         mow("Uruchamiam przegladarke...")
         browser = pw.chromium.launch(
-            headless=False,
+            headless=not POKAZ_PRZEGLADARKE,
             args=["--disable-blink-features=AutomationControlled"],
         )
         context = browser.new_context(
