@@ -48,6 +48,18 @@ Możesz też uruchomić: `python pokewars_bot.py`, `python jedna_walka.py`, `pyt
 
 Plik `config.py` jest w `.gitignore`, żeby nie wrzucać hasła do Git.
 
+## Wypchnięcie na GitHub
+
+Utwórz na GitHubie nowe **puste** repozytorium (bez automatycznego README). Potem w folderze projektu:
+
+```powershell
+cd pokewars
+git remote add origin https://github.com/TWOJ_LOGIN/TWOJE_REPO.git
+git push -u origin main
+```
+
+Możesz zamiast HTTPS użyć adresu SSH (`git@github.com:...`).
+
 ## Dostępność
 
 - Konsola: komunikaty z `flush=True`, żeby NVDA mógł je ogłaszać na bieżąco.
