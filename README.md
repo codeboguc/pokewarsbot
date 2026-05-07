@@ -48,17 +48,11 @@ Możesz też uruchomić: `python pokewars_bot.py`, `python jedna_walka.py`, `pyt
 
 Plik `config.py` jest w `.gitignore`, żeby nie wrzucać hasła do Git.
 
-## Wypchnięcie na GitHub
-
-Utwórz na GitHubie nowe **puste** repozytorium (bez automatycznego README). Potem w folderze projektu:
+Repozytorium: [github.com/codeboguc/pokewarsbot](https://github.com/codeboguc/pokewarsbot). Klonowanie:
 
 ```powershell
-cd pokewars
-git remote add origin https://github.com/TWOJ_LOGIN/TWOJE_REPO.git
-git push -u origin main
+git clone https://github.com/codeboguc/pokewarsbot.git
 ```
-
-Możesz zamiast HTTPS użyć adresu SSH (`git@github.com:...`).
 
 ## Dostępność
 
