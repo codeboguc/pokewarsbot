@@ -1,0 +1,60 @@
+============================================================
+  PokeWars Bot - INSTRUKCJA OBSLUGI
+  (kompatybilna z czytnikiem ekranu NVDA)
+============================================================
+
+1. WYMAGANIA
+   - Windows 10 lub nowszy
+   - Python 3.8 lub nowszy (https://www.python.org/downloads/)
+     WAZNE: Podczas instalacji Pythona zaznacz "Add Python to PATH"
+
+2. PIERWSZE URUCHOMIENIE
+   - Kliknij dwukrotnie plik "start.bat"
+   - Przy pierwszym uruchomieniu skrypt automatycznie zainstaluje 
+     potrzebne pakiety (moze to potrwac kilka minut)
+   - Skrypt otworzy przegladarke i zacznie dzialac
+
+3. KONFIGURACJA
+   - Skopiuj plik config.example.py jako config.py (np. w Eksploratorze
+     lub komenda: copy config.example.py config.py)
+   - Otworz config.py w edytorze tekstu i wpisz EMAIL oraz HASLO
+   - Mozesz tez zmienic:
+     MIN_PRZERWA = 3    (minimalna przerwa miedzy walkami w sekundach)
+     MAX_PRZERWA = 8    (maksymalna przerwa miedzy walkami w sekundach)
+     LIMIT_WALK = 0     (0 = bez limitu, wpisz liczbe np. 50 dla 50 walk)
+
+4. PODCZAS DZIALANIA
+   - Skrypt informuje o wszystkim co robi w konsoli
+   - Czytnik NVDA automatycznie przeczyta komunikaty
+   - Jesli pojawi sie CAPTCHA, skrypt sie zatrzyma i poprosi
+     o reczne rozwiazanie w przegladarce
+
+5. ZATRZYMANIE SKRYPTU
+   - Nacisnij Ctrl+C w oknie konsoli
+   - Lub po prostu zamknij okno
+
+6. ROZWIAZYWANIE PROBLEMOW
+   - "Python nie jest zainstalowany" 
+     -> Zainstaluj Python ze strony python.org
+     -> Zaznacz "Add Python to PATH" podczas instalacji
+   
+   - "Nie udalo sie zalogowac"
+     -> Sprawdz dane w config.py (email i haslo)
+     -> Sprawdz czy konto nie jest zbanowane
+   
+   - "Nie znalazlem przycisku Walcz z bossem"
+     -> Moze boss jest na cooldownie
+     -> Moze trzeba najpierw wybrac lokacje recznie
+   
+   - Skrypt sie zawiesza
+     -> Zamknij okno i uruchom ponownie
+     -> Zwieksz TIMEOUT w config.py (np. na 60)
+
+7. UWAGA - REGULAMIN GRY
+   Uzycie tego skryptu jest niezgodne z regulaminem pokewars.pl
+   (paragraf 7.6). Konto moze zostac zbanowane.
+   Uzywasz na wlasna odpowiedzialnosc.
+
+============================================================
+  Wiecej informacji: README.md w tym samym folderze
+============================================================

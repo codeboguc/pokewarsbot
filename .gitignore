@@ -1,0 +1,13 @@
+# Lokalna konfiguracja z hasłem — nie commituj
+config.py
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Debug / zrzuty
+debug_*.html
+debug_*.png
+blad_*.png
